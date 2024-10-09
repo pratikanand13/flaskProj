@@ -71,8 +71,6 @@ def upload_image():
 @jwt_required()
 def get_images():
     user_id = get_jwt_identity()
-
-    # Query the images uploaded by the user
     images = Image.query.filter_by(user_id=user_id).all()
     image_urls = [{"filename": img.filename, "url": img.file_url} for img in images]
 
