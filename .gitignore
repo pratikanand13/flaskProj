@@ -1,4 +1,4 @@
 venv/
-harshG_accessKeys.csv
-harshG_credentials.csv
 .env
+__pycache__/
+migrations/
